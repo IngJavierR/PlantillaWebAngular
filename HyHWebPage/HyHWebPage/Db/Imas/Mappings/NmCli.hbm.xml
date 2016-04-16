@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Imas.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="NmCli" table="Nm_Cli" lazy="true" >
+    <composite-id>
+      <key-property name="CliCia" column="Cli_Cia" />
+      <key-property name="CliId" column="Cli_Id" />
+    </composite-id>
+    <property name="CliNom">
+      <column name="Cli_Nom" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliDep">
+      <column name="Cli_Dep" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliCal">
+      <column name="Cli_Cal" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliCol">
+      <column name="Cli_Col" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliDel">
+      <column name="Cli_Del" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEdo">
+      <column name="Cli_Edo" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliPai">
+      <column name="Cli_Pai" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliCp">
+      <column name="Cli_Cp" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliTe1">
+      <column name="Cli_Te1" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliTe2">
+      <column name="Cli_Te2" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliFax">
+      <column name="Cli_Fax" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEma">
+      <column name="Cli_Ema" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliSit">
+      <column name="Cli_Sit" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliCo1">
+      <column name="Cli_Co1" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliCo2">
+      <column name="Cli_Co2" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliAlt">
+      <column name="Cli_Alt" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliBaj">
+      <column name="Cli_Baj" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliMod">
+      <column name="Cli_Mod" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliRfc">
+      <column name="Cli_Rfc" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliCurp">
+      <column name="Cli_Curp" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliSta">
+      <column name="Cli_Sta" sql-type="smallint" not-null="false" />
+    </property>
+    <property name="CliD01">
+      <column name="Cli_D01" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliD02">
+      <column name="Cli_D02" sql-type="char" not-null="true" />
+    </property>
+    <property name="CliD03">
+      <column name="Cli_D03" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliD04">
+      <column name="Cli_D04" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliD05">
+      <column name="Cli_D05" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliLim">
+      <column name="Cli_Lim" sql-type="float" not-null="false" />
+    </property>
+    <property name="CliPla">
+      <column name="Cli_Pla" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliDe1">
+      <column name="Cli_De1" sql-type="float" not-null="false" />
+    </property>
+    <property name="CliDe2">
+      <column name="Cli_De2" sql-type="float" not-null="false" />
+    </property>
+    <property name="CliDe3">
+      <column name="Cli_De3" sql-type="float" not-null="false" />
+    </property>
+    <property name="CliDe4">
+      <column name="Cli_De4" sql-type="float" not-null="false" />
+    </property>
+    <property name="CliChq">
+      <column name="Cli_Chq" sql-type="smallint" not-null="false" />
+    </property>
+    <property name="CliFan">
+      <column name="Cli_Fan" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliMon">
+      <column name="Cli_Mon" sql-type="float" not-null="false" />
+    </property>
+    <property name="CliCta">
+      <column name="Cli_Cta" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEca">
+      <column name="Cli_Eca" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEco">
+      <column name="Cli_Eco" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEde">
+      <column name="Cli_Ede" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEes">
+      <column name="Cli_Ees" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEpa">
+      <column name="Cli_Epa" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliEcp">
+      <column name="Cli_Ecp" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliNac">
+      <column name="Cli_Nac" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliDba">
+      <column name="Cli_Dba" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliImp">
+      <column name="Cli_Imp" sql-type="smallint" not-null="false" />
+    </property>
+    <property name="CliMen">
+      <column name="Cli_Men" sql-type="smallint" not-null="false" />
+    </property>
+    <property name="CliUve">
+      <column name="Cli_Uve" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliVen">
+      <column name="Cli_Ven" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliRev">
+      <column name="Cli_Rev" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliPag">
+      <column name="Cli_Pag" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliLis">
+      <column name="Cli_Lis" sql-type="smallint" not-null="false" />
+    </property>
+    <property name="CliClu">
+      <column name="Cli_Clu" sql-type="smallint" not-null="false" />
+    </property>
+    <property name="CliLad">
+      <column name="Cli_Lad" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliNiv">
+      <column name="Cli_Niv" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliPro">
+      <column name="Cli_Pro" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliAbc">
+      <column name="Cli_ABC" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliPlaint">
+      <column name="Cli_PlaInt" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliEme">
+      <column name="Cli_Eme" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliCom">
+      <column name="Cli_Com" sql-type="varchar" not-null="false" />
+    </property>
+    <property name="CliComven">
+      <column name="Cli_ComVen" sql-type="varchar" not-null="false" />
+    </property>
+    <property name="CliPco">
+      <column name="Cli_Pco" sql-type="smallint" not-null="false" />
+    </property>
+    <property name="CliRev01">
+      <column name="Cli_Rev01" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliRev02">
+      <column name="Cli_Rev02" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliRev03">
+      <column name="Cli_Rev03" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliRev04">
+      <column name="Cli_Rev04" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliRev05">
+      <column name="Cli_Rev05" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliPag01">
+      <column name="Cli_Pag01" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliPag02">
+      <column name="Cli_Pag02" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliPag03">
+      <column name="Cli_Pag03" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliPag04">
+      <column name="Cli_Pag04" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliPag05">
+      <column name="Cli_Pag05" sql-type="int" not-null="false" />
+    </property>
+    <property name="CliHorrev">
+      <column name="Cli_HorRev" sql-type="char" not-null="false" />
+    </property>
+    <property name="CliHorpag">
+      <column name="Cli_HorPag" sql-type="char" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

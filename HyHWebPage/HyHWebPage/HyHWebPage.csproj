@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{8AFCC864-8E3F-4A02-9534-BC1BFCEF0355}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HyHWebPage</RootNamespace>
+    <AssemblyName>HyHWebPage</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4">
+      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Nancy.1.4.3\lib\net40\Nancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Bootstrappers.Ninject, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Nancy.Bootstrappers.Ninject.1.4.1\lib\net40\Nancy.Bootstrappers.Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Self, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Nancy.Hosting.Self.1.4.1\lib\net40\Nancy.Hosting.Self.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4">
+      <HintPath>..\packages\NHibernate.4.0.4.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject.Extensions.ChildKernel, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7">
+      <HintPath>..\packages\Ninject.Extensions.ChildKernel.3.2.0.0\lib\net40\Ninject.Extensions.ChildKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c">
+      <HintPath>..\packages\NLog.4.2.3\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppHost.cs" />
+    <Compile Include="Db\Hyhweb\Entities\Clientes.cs" />
+    <Compile Include="Db\Hyhweb\Entities\ClientesEstadoCt.cs" />
+    <Compile Include="Db\Hyhweb\Entities\DetallePedidos.cs" />
+    <Compile Include="Db\Hyhweb\Entities\IHyhWebEntity.cs" />
+    <Compile Include="Db\Hyhweb\Entities\Pedidos.cs" />
+    <Compile Include="Db\Hyhweb\Entities\PedidosEstadoCt.cs" />
+    <Compile Include="Db\Hyhweb\Entities\Productos.cs" />
+    <Compile Include="Db\Hyhweb\Entities\ProductosEstadoCt.cs" />
+    <Compile Include="Db\Hyhweb\Entities\Usuarios.cs" />
+    <Compile Include="Db\Hyhweb\Entities\UsuariosEstadoCt.cs" />
+    <Compile Include="Db\Hyhweb\Entities\UsuariosTipoCt.cs" />
+    <Compile Include="Db\Hyhweb\Repository\HyhWebRepositoryBuilder.cs" />
+    <Compile Include="Db\Imas\Entities\IImasEntity.cs" />
+    <Compile Include="Db\Imas\Entities\NmArt.cs" />
+    <Compile Include="Db\Imas\Entities\NmCli.cs" />
+    <Compile Include="Db\Imas\Entities\NmClu.cs" />
+    <Compile Include="Db\Imas\Entities\NmInv.cs" />
+    <Compile Include="Db\Imas\Entities\NmLis.cs" />
+    <Compile Include="Db\Imas\Repository\ImasRepository.cs" />
+    <Compile Include="Db\Imas\Repository\IImasRepository.cs" />
+    <Compile Include="Db\Imas\Repository\ImasRepositoryBuilder.cs" />
+    <Compile Include="Email\SendMail.cs" />
+    <Compile Include="HyhBootstrapper.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="NHibernateContractResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ExtensionMethods.cs" />
+    <Compile Include="WebPageModule.cs" />
+    <Compile Include="Db\Hyhweb\Repository\IHyhWebRepository.cs" />
+    <Compile Include="Db\Hyhweb\Repository\HyhWebRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HibernateHyhWeb.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="HibernateImas.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Db\Imas\Mappings\NmClu.hbm.xml" />
+    <EmbeddedResource Include="Db\Hyhweb\Mappings\ClientesEstadoCt.hbm.xml" />
+    <EmbeddedResource Include="Db\Hyhweb\Mappings\Clientes.hbm.xml" />
+    <EmbeddedResource Include="Db\Imas\Mappings\NmInv.hbm.xml" />
+    <EmbeddedResource Include="Db\Imas\Mappings\NmArt.hbm.xml" />
+    <EmbeddedResource Include="Db\Imas\Mappings\NmCli.hbm.xml" />
+    <EmbeddedResource Include="Db\Imas\Mappings\NmLis.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\DetallePedidos.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\Pedidos.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\PedidosEstadoCt.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\Productos.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\ProductosEstadoCt.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\Usuarios.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\UsuariosEstadoCt.hbm.xml" />
+    <Content Include="Db\Hyhweb\Mappings\UsuariosTipoCt.hbm.xml" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NLog.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Content\app\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup />
+</Project>

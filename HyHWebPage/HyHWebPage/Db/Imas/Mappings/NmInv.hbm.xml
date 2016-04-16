@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Imas.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="NmInv" table="Nm_Inv" lazy="true" >
+    <composite-id>
+      <key-property name="InvCia" column="Inv_Cia" />
+      <key-property name="InvAlm" column="Inv_Alm" />
+      <key-property name="InvArt" column="Inv_Art" />
+    </composite-id>
+    <property name="InvSdo">
+      <column name="Inv_Sdo" sql-type="float" not-null="true" />
+    </property>
+    <property name="InvEnt">
+      <column name="Inv_Ent" sql-type="float" not-null="false" />
+    </property>
+    <property name="InvSal">
+      <column name="Inv_Sal" sql-type="float" not-null="false" />
+    </property>
+    <property name="InvApa">
+      <column name="Inv_Apa" sql-type="float" not-null="true" />
+    </property>
+  </class>
+</hibernate-mapping>

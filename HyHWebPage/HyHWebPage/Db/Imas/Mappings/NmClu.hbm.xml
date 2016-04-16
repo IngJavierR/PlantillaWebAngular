@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Imas.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="NmClu" table="Nm_Clu" lazy="true" >
+    <composite-id>
+      <key-property name="CluCia" column="Clu_Cia" />
+      <key-property name="CluCte" column="Clu_Cte" />
+      <key-property name="CluId" column="Clu_Id" />
+    </composite-id>
+    <property name="CluDes">
+      <column name="Clu_Des" sql-type="char" not-null="true" />
+    </property>
+    <property name="CluEma">
+      <column name="Clu_Ema" sql-type="char" not-null="true" />
+    </property>
+    <property name="CluCon">
+      <column name="Clu_Con" sql-type="char" not-null="true" />
+    </property>
+    <property name="CluTel1">
+      <column name="Clu_Tel1" sql-type="char" not-null="true" />
+    </property>
+    <property name="CluTel2">
+      <column name="Clu_Tel2" sql-type="char" not-null="true" />
+    </property>
+  </class>
+</hibernate-mapping>

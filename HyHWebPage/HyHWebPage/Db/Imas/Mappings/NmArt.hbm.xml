@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Imas.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="NmArt" table="Nm_Art" lazy="true" >
+    <composite-id>
+      <key-property name="ArtCia" column="Art_Cia" />
+      <key-property name="ArtId" column="Art_Id" />
+    </composite-id>
+    <property name="ArtNom">
+      <column name="Art_Nom" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtUnd">
+      <column name="Art_Und" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtPes">
+      <column name="Art_Pes" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtPun">
+      <column name="Art_Pun" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtCos">
+      <column name="Art_Cos" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtVen">
+      <column name="Art_Ven" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtFve">
+      <column name="Art_Fve" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtSeg">
+      <column name="Art_Seg" sql-type="int" not-null="false" />
+    </property>
+    <property name="ArtEnt">
+      <column name="Art_Ent" sql-type="int" not-null="false" />
+    </property>
+    <property name="ArtMin">
+      <column name="Art_Min" sql-type="int" not-null="false" />
+    </property>
+    <property name="ArtMax">
+      <column name="Art_Max" sql-type="int" not-null="false" />
+    </property>
+    <property name="ArtAlt">
+      <column name="Art_Alt" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtMod">
+      <column name="Art_Mod" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtUco">
+      <column name="Art_Uco" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtUve">
+      <column name="Art_Uve" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtUlc">
+      <column name="Art_Ulc" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtD01">
+      <column name="Art_D01" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtD02">
+      <column name="Art_D02" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtD03">
+      <column name="Art_D03" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtD04">
+      <column name="Art_D04" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtD05">
+      <column name="Art_D05" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtP01">
+      <column name="Art_P01" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtP02">
+      <column name="Art_P02" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtP03">
+      <column name="Art_P03" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtP04">
+      <column name="Art_P04" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtP05">
+      <column name="Art_P05" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtImp">
+      <column name="Art_Imp" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtTip">
+      <column name="Art_Tip" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtAbc">
+      <column name="Art_ABC" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtLin">
+      <column name="Art_Lin" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtUnc">
+      <column name="Art_Unc" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtRun">
+      <column name="Art_Run" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtMon">
+      <column name="Art_Mon" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtVol">
+      <column name="Art_Vol" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtMul">
+      <column name="Art_Mul" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtIm2">
+      <column name="Art_Im2" sql-type="float" not-null="false" />
+    </property>
+    <property name="ArtCod">
+      <column name="Art_Cod" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF01">
+      <column name="Art_F01" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF02">
+      <column name="Art_F02" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF03">
+      <column name="Art_F03" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF04">
+      <column name="Art_F04" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF05">
+      <column name="Art_F05" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF06">
+      <column name="Art_F06" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF07">
+      <column name="Art_F07" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF08">
+      <column name="Art_F08" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF09">
+      <column name="Art_F09" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtF10">
+      <column name="Art_F10" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtUob">
+      <column name="Art_Uob" sql-type="char" not-null="false" />
+    </property>
+    <property name="ArtFac">
+      <column name="Art_Fac" sql-type="float" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

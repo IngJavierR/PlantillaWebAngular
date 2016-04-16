@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Hyhweb.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="UsuariosTipoCt" table="Usuarios_Tipo_ct" lazy="true" >
+    <id name="Id" column="Id" />
+    <property name="TipoUsuario">
+      <column name="Tipo_usuario" sql-type="varchar(255)" not-null="true" />
+    </property>
+    <property name="Descripcion">
+      <column name="Descripcion" sql-type="varchar(255)" not-null="false" />
+    </property>
+    <bag name="Usuarios">
+      <key column="" />
+      <one-to-many class="Usuarios" />
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Hyhweb.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="DetallePedidos" table="Detalle_Pedidos" lazy="true" >
+    <composite-id>
+      <key-property name="IdPedidos" column="Id_Pedidos" />
+      <key-property name="Partida" column="Partida" />
+    </composite-id>
+    <many-to-one name="Productos">
+      <column name="Id_Productos" sql-type="int(10)" not-null="true" />
+    </many-to-one>
+    <property name="Cantidad">
+      <column name="Cantidad" sql-type="float(255,0)" not-null="true" />
+    </property>
+    <property name="Gramaje">
+      <column name="Gramaje" sql-type="float(255,0)" not-null="false" />
+    </property>
+    <property name="Piezas">
+      <column name="Piezas" sql-type="float(255,0)" not-null="false" />
+    </property>
+    <property name="Precio">
+      <column name="Precio" sql-type="float(255,0)" not-null="true" />
+    </property>
+    <property name="Observaciones">
+      <column name="Observaciones" sql-type="varchar(255)" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

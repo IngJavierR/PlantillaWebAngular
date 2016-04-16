@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Imas.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="NmLis" table="Nm_Lis" lazy="true" >
+    <composite-id>
+      <key-property name="LisCia" column="Lis_Cia" />
+      <key-property name="LisCli" column="Lis_Cli" />
+      <key-property name="LisArt" column="Lis_Art" />
+    </composite-id>
+    <property name="LisPre">
+      <column name="Lis_Pre" sql-type="float" not-null="true" />
+    </property>
+  </class>
+</hibernate-mapping>

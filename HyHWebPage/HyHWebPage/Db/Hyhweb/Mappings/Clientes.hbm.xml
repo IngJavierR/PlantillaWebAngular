@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Hyhweb.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Clientes" table="Clientes" lazy="true" >
+    <id name="Id" column="Id">
+      <generator class="increment" />
+    </id>
+    <many-to-one name="ClientesEstadoCt">
+      <column name="Id_Clientes_Estado_ct" sql-type="int(255)" not-null="true" />
+    </many-to-one>
+    <property name="ClaveCliente">
+      <column name="Clave_Cliente" sql-type="char(10)" not-null="true" />
+    </property>
+    <property name="UnidadEntrega">
+      <column name="Unidad_entrega" sql-type="char(10)" not-null="true" />
+    </property>
+  </class>
+</hibernate-mapping>

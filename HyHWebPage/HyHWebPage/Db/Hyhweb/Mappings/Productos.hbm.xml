@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="HyHWebPage" namespace="HyHWebPage.Db.Hyhweb.Entities" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Productos" table="Productos" lazy="true" >
+    <id name="Id" column="Id" />
+    <many-to-one name="ProductosEstadoCt">
+      <column name="Id_Productos_Estado_ct" sql-type="int(11)" not-null="true" />
+    </many-to-one>
+    <property name="ClaveProducto">
+      <column name="Clave_Producto" sql-type="char(10)" not-null="true" />
+    </property>
+    <property name="NombreWeb">
+      <column name="Nombre_Web" sql-type="varchar(255)" not-null="true" />
+    </property>
+    <property name="NombreImas">
+      <column name="Nombre_IMAS" sql-type="varchar(255)" not-null="true" />
+    </property>
+    <property name="Descripcion">
+      <column name="Descripcion" sql-type="varchar(255)" not-null="false" />
+    </property>
+    <property name="Imagen">
+      <column name="Imagen" sql-type="blob" not-null="false" />
+    </property>
+    <bag name="DetallePedidos">
+      <key column="" />
+      <one-to-many class="DetallePedidos" />
+    </bag>
+  </class>
+</hibernate-mapping>
